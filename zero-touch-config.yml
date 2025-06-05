@@ -25,5 +25,3 @@ tabs:
   - name: VSCode Editor
     port: 8443
     path: /?folder=/home/rhel/ansible-files/
-
-  
