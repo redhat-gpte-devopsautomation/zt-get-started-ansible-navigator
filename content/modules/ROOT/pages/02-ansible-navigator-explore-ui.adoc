@@ -47,10 +47,15 @@ ansible-navigator run ./test.yml
 +
 NOTE: In general, navigating *ansible-navigator* is done by using the number keys to select an option and the kbd:[Esc] key to go to the previous screen.
 
-. Explore the play that was run by pressing the number corresponding to that line. You should be taken to the next screen that will contain a list of the tasks that ran as a part of that play. Inspect the tasks by pressing the number of the corresponding line.
-
-
-* *Wondering how to select a line with a number greater than 9?* Simply prepend the number with a colon.
+. Open the play that was run by pressing the number corresponding to that line.
++
+Since this is the only playbook executed, it should be the kbd:[0] key.
++
+The next screen contains a list of tasks that ran as a part of the playbook. Press the corresponding number of each task to view details.
++
+In this example, use the kbd:[0] key to view the "Gather Facts" task.
++
+NOTE: To select a line with a number greater than 9, prepend the number with a colon.
 +
 .Example: To select line 15, you would issue the command
 [source,shell]
@@ -58,8 +63,7 @@ NOTE: In general, navigating *ansible-navigator* is done by using the number key
 :15
 ----
 
-
-* Select the gather_facts task by pressing kbd:[0] and issue the subcommand:
+* After selecting the gather_facts task by pressing kbd:[0], issue the subcommand:
 +
 [source,shell]
 ----
@@ -69,6 +73,8 @@ NOTE: In general, navigating *ansible-navigator* is done by using the number key
 NOTE: Using *ansible-navigator* is very helpful for quickly referencing documentation for specific tasks while debugging playbooks.
 
 . Finally, you can pass subcommands directly to *ansible-navigator* on the command line. Try getting docs on with *setup* module:
++
+First exit the ansible-navigator TUI with kbd:[Esc] until you are back to the command line.
 +
 [source,shell]
 ----

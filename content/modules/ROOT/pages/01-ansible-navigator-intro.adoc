@@ -8,7 +8,10 @@ NOTE: *code-server* is not packaged with Ansible Automation Platform and is not 
 
 . Integrated terminal
 +
-* Open the integrated terminal *Terminal > New Terminal* and:
+* Open the integrated terminal *Terminal > New Terminal*
++
+NOTE: This terminal defaults to **/home/rhel/ansible-files/** you should not need to change directories unless instructed to do so.
+
 * Quickly test that navigator has been installed, run:
 +
 [source,shell]
@@ -16,9 +19,11 @@ NOTE: *code-server* is not packaged with Ansible Automation Platform and is not 
 ansible-navigator --help
 ----
 
-
-
-. Now that we know *ansible-navigator* was installed successfully, try writing a quick playbook called *test.yml* to ping localhost. It could look something like this:
+. Now that we know *ansible-navigator* was installed successfully, create a writing a quick playbook called *test.yml* to ping localhost.
++
+NOTE: You may use the terminal to create the file, you can create files in the VSCode window by clicking **File**, **New File**, then enter **test.yml**, click **Create New File**, the default should read **/home/rhel/ansible-files/test.yml**, click **OK**.
++
+It could look something like this:
 +
 [source,yaml]
 ----
